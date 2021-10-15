@@ -7,4 +7,4 @@ export function createElement(tagName, props, childElements) {
       element.append(...childElements);
     }
     return element;
-  }
+}

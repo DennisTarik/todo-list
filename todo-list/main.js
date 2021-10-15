@@ -1,7 +1,7 @@
+import { createElement } from "./lib/elements.js";
 import { createTitleComponent } from "/lib/titleComponent.js";
 import { createFooterComponent } from "/lib/footerComponent.js";
 import { createTodoComponent } from "/lib/todoComponent.js";
-import { createElement } from "./lib/elements";
 
 function createApp() {
     const appElement = document.querySelector("#app");
