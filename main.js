@@ -16,7 +16,7 @@ function createApp() {
         "p", {
           className: "answer"
         },
-        [`${task}`]
+        [task]
       ); 
     appElement.append(answerText);
     }
