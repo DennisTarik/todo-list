@@ -4,7 +4,7 @@ import { createFooterComponent } from "./lib/footerComponent.js";
 import { createTodoComponent } from "./lib/todoComponent.js";
 
 function createApp() {
-    const appElement = document.querySelector("#app");
+    const appElement = document.querySelector("#app");      //i did select the id app in html here
   
     const titleComponent = createTitleComponent();
     
@@ -12,7 +12,7 @@ function createApp() {
 
     const formElement = createTodoComponent (function (task) {
 
-      let answerText = createElement(
+      let answerText = createElement(       // this part appends the new task below the input area
         "p", {
           className: "answer"
         },
@@ -22,7 +22,7 @@ function createApp() {
     }
   );
   
-    appElement.append(titleComponent);
+    appElement.append(titleComponent);      //these lines change the order of the layout
     appElement.append(formElement);
     appElement.append(footerComponent);
 }
